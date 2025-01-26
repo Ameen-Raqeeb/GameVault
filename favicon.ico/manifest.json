@@ -3,7 +3,7 @@
  "short_name": "GameVault",
  "start_url": "/GameVault/index.html",
  "display": "standalone",
- "background_color": "ff65b3",
+ "background_color": "#ff65b3",
  "theme_color": "#7209b7",
  "icons": [
   {
