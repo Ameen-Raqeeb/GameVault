@@ -1,0 +1,231 @@
+body{
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    .logo {
+        text-align: center;
+        flex-grow: 1; /* Center the logo */
+    }
+    nav {
+        display: none; 
+        flex-direction: column;
+        width: 95%;
+        background-color: #7209b7;
+        position: absolute;
+        top: 95px;
+        left: 0;
+        margin: 0 10px;
+        z-index: 1000;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav ul li ul {
+        position: static;
+        display: none;
+        margin-top: 10px;
+    }
+
+    nav ul li:hover ul {
+        display: block;
+    }
+
+    .hamburger {
+        display: block; 
+        font-size: 2rem;
+        cursor: pointer;
+        margin-left: 10px; /* Add some spacing on the left */
+        order: 0; /* Ensure the hamburger appears first */
+        }
+
+    .menu-toggle:checked ~ nav {
+        display: flex; /* Show menu when checked */
+    }
+
+    .menu-toggle:checked + .hamburger + nav {
+        display: flex;
+    }
+
+    /* Home page */
+    .hero_index img{
+        width: 100%;
+        height: 100%;
+    }
+    .index_information{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+    .index_flex img{
+        width: 85%;
+        height: 75%;
+    }
+    .index_information h2{
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #333;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0;
+        padding: 0;
+    }
+    .index_information p{
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 5px 10px;
+    }
+    .index_flex{
+        margin: 20px 10px;
+    }
+    /* Footer */
+    footer{
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    footer p{
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 5px 10px;
+    }
+    footer a{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+   
+  
+    /* About page */
+    .branches {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .branch {
+        flex: 1 1 100%; /* Full width */
+    }
+
+    .branch img, .branch iframe, .branch_iframe_left{
+        float: none;
+        margin: 0 auto;
+        display: block;
+        gap: 40px;
+    }
+    .table{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+    table{
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td{
+        border: 1px solid #333;
+        padding: 10px;
+        text-align: center;
+    }
+    th{
+        background-color: #333;
+        color: #fff;
+    }
+
+    /* Upcoming Games */
+
+    .upcoming_intro h1{
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #333;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+    }
+    .upcoming_intro p{
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 5px 10px;
+        text-align: center;
+    }
+    .upcoming_games {
+        flex-direction: column;
+        align-items: center;
+    }
+    .upcoming_game {
+        width: 90%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+    .upcoming_game img {
+        height: auto;
+    }
+
+    /* Consoles & Peripherals */
+    .grid_items {
+        grid-template-columns: 1fr;
+        justify-content: center; 
+        align-items: center;
+    }
+     
+
+    /* Games Page */
+    .game-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .game-card {
+        height: auto;
+        width:90%
+    }
+
+    /* faq page */
+    .faq_heading h1{
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #333;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+    }
+    .faq{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    form{
+        width: 400px;
+    }
+
+    .faq-item{
+        width: 400px;
+    }
+    
+
+}

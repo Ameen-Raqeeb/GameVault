@@ -1,0 +1,479 @@
+/* Barcelona Theme Colors */
+:root {
+    --barca-gold: #EDBB00;
+}
+
+body{
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: #ff65b3;
+}
+
+/* General Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    background-color: #7209b7;
+    color: #fff;
+}
+
+/* Logo */
+.logo h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--barca-gold);
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin-left: 20px;
+    display: inline-block;
+}
+nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    color: var(--barca-gold);
+    border-radius: 5px;
+}
+
+/* Hamburger Menu for Mobile */
+.menu-toggle {
+    display: none; /* Hide the checkbox */
+}
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Home Page */
+
+.hero_index img{
+    width: 100%;
+    height: 100%;
+} 
+
+.index_information{
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+.index_flex{
+    align-items: center;
+    margin: 20px 0;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: #eec7fc;
+    border-radius: 10px;
+}
+.index_flex ul li{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+.index_flex img{
+    float : right;
+    margin: 0px 40px;
+    height: 250px;
+}
+
+.image_right img{
+    float : left;
+}
+.index_flex ol li{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+.index_information h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Footer */
+footer{
+    background-color: #7209b7;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    padding: 2rem;
+}
+
+footer p{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 5px 10px;
+    left : 10%;
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+footer a:hover{
+    color: var(--barca-gold);
+}
+
+footer img{
+    width: 100%;
+    height: 100%;
+}
+
+/* About Page */
+
+.branches{
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+.branch{
+    display:block;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #eec7fc;
+    border-radius: 10px;
+    height: 375px;
+}
+
+.branch img{
+    float : right;
+    margin: 0px 40px;
+    width: 300px;
+    height: 300px;
+}
+
+.branch iframe{
+    float : right;
+    margin: 0px 40px;
+    width: 300px;
+    height: 300px;
+}
+
+.branch_iframe_left {
+    float: left;
+}
+
+.branch h2{
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.branch p{
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.table{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td{
+    border: 1px solid #333;
+    padding: 10px;
+}
+th{
+    background-color: #333;
+    color: #fff;
+}
+
+/* Upcoming Games */
+.upcoming_games {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #eec7fc;
+}
+.upcoming_game {
+    position: relative;
+    width: 350px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.upcoming_game img {
+    width: 100%;
+    height: 100%;
+    
+}
+.upcoming_game .release-date {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.upcoming_game:hover .release-date {
+    opacity: 1;
+}
+.upcoming_intro h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+.upcoming_intro p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+/* Console & Peripherals */
+
+.grid_items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 5px;
+    padding-bottom: 20px;
+}
+.items {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 0 auto;
+    cursor: pointer;
+    max-width: 400px;
+    background-color: #eec7fc;
+}
+.items img {
+    width: 100%;
+    height: 100%;
+}
+.items .price-tag {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.items:hover .price-tag {
+    opacity: 1;
+}
+
+.button-class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-class a {
+    background-color: #7209b7;
+    display: inline-block;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.button-class :hover{
+    color: var(--barca-gold);
+}
+
+/* Games Page */
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #eec7fc;
+}
+.game-card {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+    margin: 10px;
+    width: 700px;
+    height: 500px;
+}
+.game-card img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+.game-card:hover img {
+    transform: scale(1.1);
+}
+.game-card .description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.game-card .description h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    align-items: right;
+}
+.game-card .description p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+.game-card:hover .description {
+    opacity: 1;
+}
+
+/* faq page */
+.faq_heading h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+.faq_heading p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.faq-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    text-align: center;
+}
+.faq-item{
+    width: 800px;
+    height: 100px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #eec7fc;
+    border-radius: 10px;
+}
+.faq-item h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.faq-item p{
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+form{
+    width: 800px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #eec7fc;
+    border-radius: 10px;
+}
+form label{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+form input{
+    width: 95%;
+    padding: 5px 10px;
+    margin: 5px 0;
+}
+form textarea{
+    width: 95%;
+    padding: 5px 10px;
+    margin: 5px 0;
+}
+form button{
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 10px 0;
+}
