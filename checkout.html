@@ -22,7 +22,7 @@
     <meta name="msapplication-TileColor" content="#ff65b3">
     <meta name="msapplication-TileImage" content="./favicon.ico/ms-icon-144x144.png">
     <meta name="theme-color" content="#7209b7">
-    <title>GameVault | Home </title>
+    <title>GameVault | Order </title>
 </head>
 <body>
     <header>
@@ -47,51 +47,72 @@
         </nav>
     </header>
     <main>
-        <br>
-        <div class="hero_index">
-            <img src="./Images/hero.jpg" alt="Hero Image">
+
+        <div class="cart_table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pc Component Name</th>
+                        <th>Price (LKR)</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody class="cart_items">
+
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Total</td>
+                        <td class="total">0.00</td>
+                    </tr>
+                </tfoot>
+            </table>
         </div>
-        <div class="index_information">
+
+        <div class="personalDetails">
             
-            <div class="index_flex">
-                <img src="./Images/about.jpg" alt="Who are we">
-                <h2>Who Are We</h2>
-                <p>At Gamers Club, we’re more than just a retailer—we’re a community for gamers who live and breathe video games. Whether you’re a casual player, a hardcore enthusiast, or a competitive pro, we’ve got everything you need to level up your gaming experience.</p>
-            <br><br><br>
-            <br><br><br>
-            <br>
-            <br>
-        </div>
-        
-        <br>
-        <div class="index_flex image_right">
-            <img src="./Images/accessories.jpg" alt="Gaming Accessories">
-            <h2>Premium Gaming Accessories</h2>
-            <p>Enhance your gameplay with our wide range of premium gaming accessories. From ergonomic gaming chairs to high-performance keyboards and headsets, we offer the best tools for every gamer.</p>
-            <p>Our accessories are designed to provide maximum comfort, durability, and performance. Whether you're a PC gamer or console enthusiast, you'll find the perfect gear to match your style.</p>
-            <ol>
-                <li>Mechanical Keyboards for faster response times.</li> 
-                <li>Surround Sound Headsets for immersive audio.</li>
-                <li>Precision Gaming Mice with customizable DPI settings.</li>
-            </ol>
-        </div>
-        <br>
-        <div class="index_flex">
-                <img src="./Images/consoles.jpg" alt="Latest Gaming Consoles">
-                <h2>Latest Consoles</h2>
-                <p>Gamers Club offers the latest and most advanced gaming consoles to elevate your gaming experience. From PlayStation to Xbox and Nintendo Switch, we have it all. Whether you're looking for stunning 4K visuals, lightning-fast performance, or immersive gameplay, our collection of consoles has something for everyone.</p>
-                <p>Our consoles come bundled with exclusive games, accessories, and warranties to ensure that you get the best value for your money. With seamless online connectivity and next-gen features, you can enjoy gaming like never before.</p>
-                <ul>
-                    <li>PlayStation 5 - Ultra-fast SSD and stunning graphics.</li>
-                    <li>Xbox Series X - Ultimate performance and Game Pass integration.</li>
-                    <li>Nintendo Switch - Portability and flexibility for gaming on the go.</li>
-                </ul>
-            </div>
-            <br>
+            <form id="form1">
+                <h2>Personal Details</h2>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required minlength="2">
+            
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" title="Please enter a 10-digit phone number">
+            
+                <label for="address">Address</label>
+                <textarea id="address" name="address" required minlength="10"></textarea>
+            
+                <h2>Delivery Details</h2>
+                <label for="deliveryDate">Delivery Date</label>
+                <input type="date" id="deliveryDate" name="deliveryDate" required>
+            
+                <label for="deliveryAddress">Delivery Address</label>
+                <textarea id="deliveryAddress" name="deliveryAddress" required minlength="10"></textarea>
+            
+                <h2>Payment Details</h2>
+                <label for="cardNumber">Card Number</label>
+                <input type="text" id="cardNumber" name="cardNumber" required pattern="\d{16}" title="Please enter a valid 16-digit card number">
+            
+                <label for="expiryDate">Expiry Date</label>
+                <input type="month" id="expiryDate" name="expiryDate" required>
+            
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" required pattern="\d{3}" title="Please enter a valid 3-digit CVV">
+            
+                <button type="submit">Pay Now</button>
+            </form>
 
         </div>
-        
+
     </main>
+
     <footer>
         <div class="footer_disclaimer">
             <p>&copy; 2021 Gamers Club. All Rights Reserved.</p>
@@ -101,5 +122,6 @@
             <a href="./queries.html" >FAQ</a>
         </div>
     </footer>
+    <script src="./Scripts/checkout.js"></script>
 </body>
 </html>
